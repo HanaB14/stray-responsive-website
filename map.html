@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More - STRAY</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <style>
+        .grid-container{
+            min-height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 85px auto 300px;
+        }
+
+        header, footer{
+            grid-column: 1 / -1;
+        }
+
+        .more-main{
+            background-color: #f2f2f2;
+            padding: 55px 50px 70px 50px;
+        }
+
+        .more-intro{
+            text-align: center;
+            margin-bottom: 40px;
+            font-family: "Happy Monkey", cursive;
+        }
+
+        .more-intro h1{
+            font-size: 42px;
+            color: #71D4D4;
+            margin-bottom: 16px;
+        }
+
+        .more-intro p{
+            font-size: 18px;
+            color: black;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .map-grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 30px;
+        }
+
+        .card{
+            background-color: white;
+            border-radius: 28px;
+            padding: 20px 20px 28px 20px;
+            text-align: center;
+            box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+        }
+
+        .card img{
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 22px;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .card h2{
+            font-family: "Happy Monkey", cursive;
+            color: #FDA630;
+            font-size: 28px;
+            margin-bottom: 14px;
+        }
+
+        .card p{
+            font-family: "Happy Monkey", cursive;
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 18px;
+        }
+
+        .chapter-list{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            font-family: "Happy Monkey", cursive;
+            font-size: 15px;
+            line-height: 1.8;
+            color: #333333;
+        }
+
+        .chapter-list li{
+            padding: 6px 0;
+            border-bottom: 1px solid #e8e8e8;
+        }
+
+        .chapter-list li:last-child{
+            border-bottom: none;
+        }
+
+        @media only screen and (min-width: 481px) and (max-width: 960px){
+            .more-main{
+                padding: 40px 28px 55px 28px;
+            }
+
+            .more-intro h1{
+                font-size: 34px;
+            }
+
+            .more-intro p{
+                font-size: 16px;
+            }
+
+            .map-grid{
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+
+            .card img{
+                height: 220px;
+            }
+        }
+
+        @media only screen and (max-width: 480px){
+            .more-main{
+                padding: 30px 18px 45px 18px;
+            }
+
+            .more-intro h1{
+                font-size: 28px;
+            }
+
+            .more-intro p{
+                font-size: 14px;
+            }
+
+            .map-grid{
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .card{
+                padding: 16px 16px 22px 16px;
+            }
+
+            .card img{
+                height: 180px;
+                border-radius: 18px;
+            }
+
+            .card h2{
+                font-size: 24px;
+            }
+
+            .card p{
+                font-size: 14px;
+            }
+
+            .chapter-list{
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <header>
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Stray logo">
+            </a>
+
+            <nav>
+                <ul>
+                    <a href="index.html">
+                        <li>HOME</li>
+                    </a>
+                    <a href="about.html">
+                        <li>ABOUT</li>
+                    </a>
+                    <a href="map.html">
+                        <li>MAP</li>
+                    </a>
+                    <a href="https://annapurnainteractive.com/news" target="_blank">
+                        <li>NEWS</li>
+                    </a>
+                </ul>
+            </nav>
+
+            <div id="iconBtn">
+                <img src="images/Search icon.png" alt="Search icon">
+                <img src="images/Language icon.png" alt="Language icon">
+            </div>
+
+            <div id="heroBtn">PLAY NOW</div>
+        </header>
+
+        <section class="more-main">
+            <div class="more-intro">
+                <h1>City Chapters</h1>
+                <p>
+                    Explore the chapter journey through Stray’s city map, from ruined streets and underground tunnels to the glowing heart of Midtown.
+                </p>
+            </div>
+
+            <div class="map-grid">
+                <div class="card">
+                    <img src="images/more/02-DeadCity.webp" alt="Dead City">
+                    <h2>Outer City</h2>
+                    <p>
+                        The journey begins beyond the safe walls, through ruined streets and abandoned apartments where mystery first unfolds.
+                    </p>
+                    <ul class="chapter-list">
+                        <li>Chapter 1 - Inside the Wall</li>
+                        <li>Chapter 2 - Dead City</li>
+                        <li>Chapter 3 - The Flat</li>
+                        <li>Chapter 4 - The Slums</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <img src="images/more/Sewers.jpg" alt="The Sewers">
+                    <h2>Underground Route</h2>
+                    <p>
+                        Climb higher, go deeper, and pass through dangerous forgotten spaces while uncovering more of the city’s hidden story.
+                    </p>
+                    <ul class="chapter-list">
+                        <li>Chapter 5 - Rooftops</li>
+                        <li>Chapter 6 - The Slums (Part 2)</li>
+                        <li>Chapter 7 - Dead End</li>
+                        <li>Chapter 8 - The Sewers</li>
+                        <li>Chapter 9 - Antvillage</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <img src="images/more/midtown.jpg" alt="Midtown">
+                    <h2>Final Escape</h2>
+                    <p>
+                        From the glowing streets of Midtown to the final control room, the path forward becomes clearer — and more dangerous.
+                    </p>
+                    <ul class="chapter-list">
+                        <li>Chapter 10 - Midtown</li>
+                        <li>Chapter 11 - Jail</li>
+                        <li>Chapter 12 - Control Room</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="social-icons">
+                <a href="https://www.youtube.com/annapurnainteractive" target="_blank">
+                    <img src="images/footer/Youtube.png" alt="YouTube icon">
+                </a>
+
+                <a href="https://www.instagram.com/annapurnainteractive/" target="_blank">
+                    <img src="images/footer/ins.png" alt="Instagram icon">
+                </a>
+
+                <a href="https://www.facebook.com/AnnapurnaInteractive/" target="_blank">
+                    <img src="images/footer/facebook.png" alt="Facebook icon">
+                </a>
+
+                <a href="https://www.tiktok.com/@annapurnainteractive" target="_blank">
+                    <img src="images/footer/tiktok.png" alt="TikTok icon">
+                </a>
+
+                <a href="https://x.com/a_i" target="_blank">
+                    <img src="images/footer/x.png" alt="X icon">
+                </a>
+            </div>
+
+            <p class="copyright">
+                ©2022 BlueTwelve Studio Ltd. Published by Annapurna Interactive under exclusive license.
+            </p>
+
+            <div class="footer-links">
+                <span>PRIVACY POLICY</span>
+                <span>TERMS OF SERVICE</span>
+                <span>COOKIE PREFERENCES</span>
+            </div>
+
+            <div class="rating-box">
+                <img src="images/footer/ESRB.png" alt="ESRB rating">
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
